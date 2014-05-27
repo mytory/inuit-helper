@@ -1,0 +1,83 @@
+.full-height
+  height: 100%
+
+.brand-color-box
+  background: $brand-color !important
+  color: #fff !important
+
+.brand-border-box
+  border: 1px solid $brand-color
+  border-radius: $brand-round
+  @extend .padded
+  @extend .padded--closed
+  *:last-child
+    margin-bottom: 0
+    padding-bottom: 0
+
+.padded
+  padding: $base-spacing-unit
+  padding-bottom: 0px
+
+.padded--narrow
+  padding: $half-spacing-unit
+  padding-bottom: 0px
+
+.padded--closed
+  @extend .padded
+  padding-bottom: $base-spacing-unit
+
+.padded--narrow-closed,
+.padded--closed-narrow
+  @extend .padded--narrow
+  padding-bottom: $half-spacing-unit
+
+.half-spacing
+  margin-bottom: $half-spacing-unit
+
+hr.half-spacing
+  margin-bottom: $half-spacing-unit - 1
+
+.base-spacing
+  margin-bottom: $base-spacing-unit
+
+.no-spacing
+  margin-bottom: 0px
+
+.weaker
+  color: #666
+
+.text-left
+  text-align: left
+
+.text-right
+  text-align: right
+
+.text-center
+  text-align: center
+
+.keep-words
+  word-break: keep-all
+
+.subsize
+  +font-size($base-font-size * 0.9)
+
+.truncate
+  +truncate(100%)
+
+.thin-bordered
+  border: 1px solid #ddd
+
+.l-inline
+  display: inline-block
+  *display: inline
+
+.l-hidden
+  display: none
+
+.l-block
+  display: block
+
+.center-block
+  display: block
+  margin-right: auto
+  margin-left: auto

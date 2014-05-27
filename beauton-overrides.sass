@@ -1,0 +1,19 @@
+// Override Inuit.css's Beauton class
+.btn
+  *white-space: normal
+  text-align: center
+
+.btn--gray
+  background: #777
+  color: #fff
+  &:hover
+    background: #444
+
+a.btn--gray
+  &:link,
+  &:visited,
+  &:hover
+    color: #fff
+
+.btn:hover
+  +vendor(box-shadow, 0 0 5px 0px rgba(0, 0, 0, 0.4))
