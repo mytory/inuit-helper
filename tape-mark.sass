@@ -1,0 +1,21 @@
+.tape-mark
+  position: relative
+  top: $half-spacing-unit * -1
+  text-align: center
+  padding: $half-spacing-unit / 2
+  min-width: 120px
+  +vendor(box-shadow, 5px 0px 0px 0px rgba(0, 0, 0, 0.4))
+  display: block
+  
+  //  이 규칙은 shrink to fit을 위한 것임.
+  float: left
+
+.ie.no-boxshadow .tape-mark
+  behavior: url(#{$template-uri}/css/htc/PIE.htc)
+
+a.tape-mark
+  &:link,
+  &:visited,
+  &:hover
+    color: inherit
+    text-decoration: none
