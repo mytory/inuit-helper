@@ -14,7 +14,6 @@
     margin-bottom: 0
     padding-bottom: 0
 
-
 .padded
   padding: $base-spacing-unit
   padding-bottom: 0px
@@ -89,3 +88,8 @@ hr.half-spacing
 
 .a--no-deco
   text-decoration: none!important
+
+// for inuit boxsizing
+.grid__item
+  *behavior: url("htc/boxsizing.htc")
+  *display: inline
